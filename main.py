@@ -26,6 +26,7 @@ while use:
         name_input = input("Name:")
         contact_input = input("Contact Number:")
         email_input = input("Email Address:")
+        
     elif menu_input == "3":
         use = False
     else:
