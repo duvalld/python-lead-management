@@ -9,6 +9,25 @@ with open(json_file_path, 'r') as file:
 for item in data:
     for key, value in item.items():
         print(f"{key} : {value}")
-        
 
+use = True
+while use:
+    menu_input = input("Enter 1 for View, 2 for adding new item, 3 to exit program: ")
+    if menu_input == "1":
+        view_menu_input = input("Enter 1 to search via Name, 2 to search via Contact number, 3 to search via Email Address: ")
+        if view_menu_input == "1":
+            search_input = input("Search Name:")
+        elif view_menu_input == "2":
+            search_input = input("Search Contact Number:")
+        elif view_menu_input == "3":
+            search_input = input("Search Email Address:")
+    elif menu_input == "2":
+        print("Add New Item")
+        name_input = input("Name:")
+        contact_input = input("Contact Number:")
+        email_input = input("Email Address:")
+    elif menu_input == "3":
+        use = False
+    else:
+        pass
 
